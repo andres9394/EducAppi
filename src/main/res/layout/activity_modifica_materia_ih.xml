@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context="com.project.andre.educappi.Controlador.ModificaMateria">
+
+    <Button
+        android:id="@+id/btnMMMM"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:onClick="consultarMateriasDelProfesor"
+        android:text="Mostrar Materias" />
+
+    <ListView
+        android:id="@+id/lstMaterias"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etIDMateria"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="ID Materia"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnModMateria"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="modificarMateria"
+            android:text="Modificar esta materia" />
+    </LinearLayout>
+</LinearLayout>

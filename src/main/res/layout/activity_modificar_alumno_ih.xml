@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context="com.project.andre.educappi.Controlador.ModificarAlumno">
+
+    <Button
+        android:id="@+id/btnMostrarAlumnos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:onClick="consultarAlumnosDelProfesor"
+        android:text="Mostrar alumnos" />
+
+    <ListView
+        android:id="@+id/lstAlumnos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etCurp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="C.U.R.P."
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnModificarAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="modificarAlumno"
+            android:text="Modificar este alumno" />
+
+    </LinearLayout>
+
+</LinearLayout>

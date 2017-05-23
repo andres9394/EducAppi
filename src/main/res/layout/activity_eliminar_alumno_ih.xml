@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.project.andre.educappi.Controlador.EliminarAlumno">
+
+    <Button
+        android:id="@+id/btnMAEA"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:onClick="consultarAlumnosDelProfesor"
+        android:text="Mostrar Alumnos" />
+
+    <ListView
+        android:id="@+id/lstAlumnosEA"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etCurpEA"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="C.U.R.P."
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnEliminarAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="eliminarAlumno"
+            android:text="Eliminar este Alumno" />
+    </LinearLayout>
+</LinearLayout>

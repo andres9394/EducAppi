@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.project.andre.educappi">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,10 +15,9 @@
             android:name=".MenuPrincipal"
             android:label="Menú Principal" />
         <activity
-            android:name=".AgregarAlumno"
+            android:name=".Controlador.AgregarAlumno"
             android:label="Agregar Alumno" />
-        <activity
-            android:name=".incio_sesion_controlador">
+        <activity android:name=".Controlador.incio_sesion_controlador">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,20 +25,53 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegistraDocente"
+            android:name=".Controlador.RegistraDocente"
             android:label="Registrar Nuevo Docente" />
         <activity
-            android:name=".GeneracionListaAlumno"
-            android:label="Generar Lista De Alumnos">
-        </activity>
+            android:name=".Controlador.GeneracionListaAlumno"
+            android:label="Generar Lista De Alumnos" />
         <activity
-            android:name=".GeneracionReporteAlumno"
-            android:label="Generar Reporte De Alumno">
-        </activity>
+            android:name=".Controlador.GeneracionReporteAlumno"
+            android:label="Generar Reporte De Alumno" />
         <activity
-            android:name=".AgregarMatera"
-            android:label="Agregar Materia">
-        </activity>
+            android:name=".Controlador.AgregarMateria"
+            android:label="Agregar Materia" />
+        <activity
+            android:name=".Controlador.ModificarAlumno"
+            android:label="Modificar Alumno" />
+        <activity
+            android:name=".Controlador.ModificarInformacionAlumno"
+            android:label="Modificar Información de Alumno" />
+        <activity
+            android:name=".Controlador.EliminarAlumno"
+            android:label="Eliminar Alumno" />
+        <activity
+            android:name=".Controlador.HerramientasOnline"
+            android:label="Visualizar Herramientas" />
+        <activity
+            android:name=".Controlador.EnviarEvidencia"
+            android:label="Enviar Evidencia" />
+        <activity
+            android:name=".Controlador.CreaNotaAlumno"
+            android:label="Crear Nota" />
+        <activity
+            android:name=".Controlador.GuardaNota"
+            android:label="Guardar Nota" />
+        <activity
+            android:name=".Controlador.JustificaInasistencia"
+            android:label="Justificar Inasistencia" />
+        <activity
+            android:name=".Controlador.AgregaCalificacion"
+            android:label="Añade Calificación" />
+        <activity
+            android:name=".Controlador.GuardaCalificacion"
+            android:label="Guarda Calificación" />
+        <activity
+            android:name=".Controlador.ModificaMateria"
+            android:label="Modificar Materia"/>
+        <activity
+            android:name=".Controlador.ModificaInformacionMateria"
+            android:label="Modificar Materia"/>
     </application>
 
 </manifest>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dar_alta_alumno_ih"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.project.andre.educappi.Controlador.AgregarAlumno">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:id="@+id/et_nombre_alumno"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:hint="Nombre(s)" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_alumno_apellidos"
+        android:layout_below="@+id/et_nombre_alumno"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Apellido(s)" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/et_alumno_apellidos"
+        android:layout_alignParentStart="true"
+        android:id="@+id/et_Alumno_curp"
+        android:hint="CURP"
+        android:maxLength="18"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/et_Alumno_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_Alumno_curp"
+        android:ems="10"
+        android:hint="Teléfono"
+        android:maxLength="10"
+        android:inputType="textPersonName|phone" />
+
+    <EditText
+        android:id="@+id/et_Alumno_edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_Alumno_telefono"
+        android:layout_alignBottom="@+id/et_Alumno_telefono"
+        android:layout_toEndOf="@+id/et_Alumno_telefono"
+        android:ems="10"
+        android:hint="Edad"
+        android:maxLength="2"
+        android:inputType="textPersonName|number" />
+
+    <EditText
+        android:id="@+id/et_Alumno_matricula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_Alumno_email"
+        android:ems="10"
+        android:hint="Matricula"
+        android:maxLength="8"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/agregarBtn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/rBtnMujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="109dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Mujer" />
+
+        <RadioButton
+            android:id="@+id/rBtnHombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Hombre" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:text="Agregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/agregarBtn"
+        android:onClick="agregarAlumno"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="validarFormulario"/>
+
+    <EditText
+        android:id="@+id/et_Alumno_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_Alumno_telefono"
+        android:ems="10"
+        android:hint="Correo de los padres"
+        android:inputType="textEmailAddress" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/et_Alumno_telefono"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="96dp"
+        android:layout_above="@+id/radioGroup">
+
+        <Spinner
+            android:id="@+id/spinner_grado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/spinner_grupo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</RelativeLayout>

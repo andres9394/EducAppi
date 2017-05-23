@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.project.andre.educappi.Controlador.AgregaCalificacion"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/btnMAAC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="consultarAlumnosDelProfesor"
+        android:text="Mostrar Alumnos" />
+
+    <ListView
+        android:id="@+id/lstAlumnosAC"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="1.07" />
+
+    <EditText
+        android:id="@+id/etACAC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="C.U.R.P"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnAC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="agregaCalificacion"
+        android:text="Añadir calificaciones del alumno" />
+</LinearLayout>

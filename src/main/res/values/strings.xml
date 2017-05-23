@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">EducAppi</string>
+    <string name="correo_director">director_escuela@primaria.edu.mx</string>
+
+    <string-array name="Materias_primero">
+        <item>Matemáticas I</item>
+        <item>Español I</item>
+        <item>Exploración de la Naturaleza y la Sociedad I</item>
+        <item>Formación Cívica y Ética I</item>
+        <item>Educación Física I</item>
+        <item>Educación Artística I</item>
+    </string-array>
+
+    <string-array name="Materias_segundo">
+        <item>Matemáticas II</item>
+        <item>Español II</item>
+        <item>Exploración de la Naturaleza y la Sociedad II</item>
+        <item>Formación Cívica y Ética II</item>
+        <item>Educación Física II</item>
+        <item>Educación Artística II</item>
+    </string-array>
+
+    <string-array name="Materias_tercero">
+        <item>Matemáticas III</item>
+        <item>Español III</item>
+        <item>Exploración de la Naturaleza y la Sociedad III</item>
+        <item>Formación Cívica y Ética III</item>
+        <item>Educación Física III</item>
+        <item>Educación Artística III</item>
+    </string-array>
+
+    <string-array name="Materias_cuatro">
+        <item>Matemáticas IV</item>
+        <item>Español IV</item>
+        <item>Exploración de la Naturaleza y la Sociedad IV</item>
+        <item>Formación Cívica y Ética IV</item>
+        <item>Educación Física IV</item>
+        <item>Educación Artística IV</item>
+    </string-array>
+
+    <string-array name="Materias_quinto">
+        <item>Matemáticas V</item>
+        <item>Español V</item>
+        <item>Exploración de la Naturaleza y la Sociedad V</item>
+        <item>Formación Cívica y Ética V</item>
+        <item>Educación Física V</item>
+        <item>Educación Artística V</item>
+    </string-array>
+
+    <string-array name="Materias_sexto">
+        <item>Matemáticas VI</item>
+        <item>Español VI</item>
+        <item>Exploración de la Naturaleza y la Sociedad VI</item>
+        <item>Formación Cívica y Ética VI</item>
+        <item>Educación Física VI</item>
+        <item>Educación Artística VI</item>
+    </string-array>
+
+    <string-array name="Grados">
+        <item>1°</item>
+        <item>2°</item>
+        <item>3°</item>
+        <item>4°</item>
+        <item>5°</item>
+        <item>6°</item>
+    </string-array>
+
+    <string-array name="Grupos">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+
+    <string-array name="Cantidad_Alumnos">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+
+</resources>
